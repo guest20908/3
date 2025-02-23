@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px;
+}
+
+body {
+    background-color: white;
+    width: 70%;
+    margin: 1.5rem auto 1rem auto;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    height: 1.25rem;
+}
+
+.flex3column {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+}
+
+.flex2column {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group2 {
+    max-width: 100%;
+    width: 50%;
+    padding: 10px;
+}
+
+select {
+    display: block;
+    width: 80%;
+    height: 1.5rem;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.mailing-list {
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    border: none;
+    background-color: green;
+    border-color: green;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 0.5em;
+}
+
+.message-box {
+    background-color: gainsboro;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.admin-button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.admin-button, .home-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.admin-button:hover, .home-button:hover, button:hover {
+    background-color: darkgreen;
+}
+
+.invalid {
+    text-align: center;
+}
+
+.invalid h1 {
+    padding-bottom: 1em;
+}
+
+.admin {
+    background-color: white;
+}
+
+.guestbook-entry {
+    margin: 15px;
+    justify-content: flex-start;
+}
+
+.guestbook-entry hr {
+    margin-top: 10px;
+}
+
+.guestbook-entry p {
+    padding: 2px;
+}
+
+#thank-you h1, p{
+    padding: 8px;
+}

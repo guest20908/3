@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <link rel="icon" href="/images/book-open.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="/admin" class="admin-button">Admin</a>
+    </header>
+    <form action="/submit" method="post">
+        <h1>Contact Form</h1>
+        <div class="top">
+            <div class="flex3column">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname">
+                </div>
+                <div class="form-group">
+                    <label for="jobtitle" name="jobtitle">Job Title</label>
+                    <input type="text" name="jobtitle">
+                </div>
+            </div>
+            <div class="flex3column">
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" name="company"> 
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn URL</label>
+                    <input type="text" name="linkedin">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email">
+                </div>
+            </div>
+        </div>
+        <div class="flex2column">
+            <div class="form-group2">
+                <label for="meet">How did we meet?</label>
+                <select name="meet" id="meet">
+                    <option value="meetup">Meet up</option>
+                    <option value="jobfair">Job Fair</option>
+                    <option value="conference">Conference</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminar">Seminar</option>
+                </select>
+            </div>
+            <div class="form-group2">
+                <label for="other">Other (please specify)</label>
+                <input type="text" name="other">
+            </div>
+        </div>
+
+        <label for="message">Message</label><br>
+        <textarea name="message"></textarea>
+        
+        <div class="mailing-list">
+                <input type="checkbox" name="mailing_list" value="yes">
+                <label for="checkbox">Please add me to your mailing list</label>
+        </div>
+        <div class="mail-format">
+            <label>Choose an email format:</label>
+            <label for="format">HTML</label>
+            <input type="radio" id="html" name="format" value="html" checked>
+            <label for="text">Text</label>   
+            <input type="radio" id="text" name="format" value="text">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="icon" href="/images/book-open.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body id="thank-you">
+   <header>
+    <a href="/" class="home-button">Home</a>
+    <a href="/admin" class="admin-button">Admin</a>
+   </header>
+   <h2>Your Details</h2>
+   <p><strong>Your Name:</strong> <%= page.fname %> <%= page.lname %></p>
+   <p><strong>Title:</strong> <%= page.jobtitle %></p>
+   <p><strong>Job Title:</strong> <%= page.jobtitle %></p>
+   <p><strong>Company:</strong> <%= page.company %></p>
+   <p><strong>LinkedIn:</strong> <%= page.linkedin %></p>
+   <p><strong>Email:</strong> <%= page.email %></p>
+   <p><strong>How we met:</strong> <%= page.meet %></p>
+   <p><strong>Other:</strong> <%= page.other %></p>
+   
+   <% if (page.message.trim() !== "") { %>
+       <div class="message-box">
+           <p><strong>Message:</strong> <%= page.message %></p>
+       </div>
+   <% } %>
+   
+   <p><strong>Mailing List:</strong> 
+       <% // Checking if mailing list is yes or not selected %>
+       <%= page.mailing_list === "yes" ? "Yes" : "No" %>
+   </p>
+   <p><strong>Mail Format:</strong> <%= page.format %></p>
+   <footer></footer>
+</body>
+</html>

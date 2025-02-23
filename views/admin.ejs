@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="icon" href="/images/book-open.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="admin">
+   <header>
+    <a href="/" class="home-button">Home</a>
+    <a href="/admin" class="admin-button">Refresh</a>
+   </header>
+    <h1>Guestbook:</h1>
+    <% for (let i = 0; i < guestbook.length; i++) { %>
+        <% if (i === 0) { %> <hr> <% } %>
+        <div class="guestbook-entry">
+            <p><strong>Date:</strong> <%= guestbook[i].timestamp %></p>
+            <p><strong>Name:</strong> <%= guestbook[i].fname %> <%= guestbook[i].lname %></p>
+            <p><strong>Title:</strong> <%= guestbook[i].jobtitle %></p>
+            <p><strong>Job Title:</strong> <%= guestbook[i].jobtitle %></p>
+            <p><strong>Company:</strong> <%= guestbook[i].company %></p>
+            <p><strong>LinkedIn:</strong> <%= guestbook[i].linkedin %></p>
+            <p><strong>Email:</strong> <%= guestbook[i].email %></p>
+            <p><strong>Met At:</strong> <%= guestbook[i].meet %></p>
+            <p><strong>Other:</strong> <%= guestbook[i].other %></p>
+            <% if (guestbook[i].message.trim() !== "") { %>
+                <p><strong>Message:</strong>
+                <div class="message-box">
+                     <%= guestbook[i].message %></p>
+                </div>
+            <% } %>
+            <p><strong>Mailing List:</strong> 
+                <% // Checking if mailing list is yes or not selected %>
+                <%= guestbook[i].mailing_list === "yes" ? "Yes" : "No" %>
+            </p>
+            <p><strong>Mail Format:</strong> <%= guestbook[i].format %></p>
+            <hr>
+        </div>
+    <% } %>
+   <footer></footer>
+</body>
+</html>
